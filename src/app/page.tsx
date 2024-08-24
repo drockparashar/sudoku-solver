@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 export default function Component() {
-  const [grid, setGrid] = useState(Array(9).fill().map(() => Array(9).fill("")))
+  const [grid, setGrid] = useState(Array(9).fill("").map(() => Array(9).fill("")))
   const [solved, setSolved] = useState(false)
 
   const handleInputChange = (row: number, col: number, value: string) => {
